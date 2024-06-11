@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="calculator">
+        <div class="display">
+            <input type="text" id="result" disabled>
+        </div>
+    <div class="buttons">
+        <button onclick="clearDisplay()">C</button>
+        <button onclick="appendToDiplay('/')">/</button>
+        <button onclick="appendToDiplay('*')">*</button>
+        <button onclick="deleteLast()">DEL</button>
+        <button onclick="appendToDiplay('7')">7</button>
+        <button onclick="appendToDiplay('8')">8</button>
+        <button onclick="appendToDiplay('9')">9</button>
+        <button onclick="appendToDiplay('-')">-</button>
+        <button onclick="appendToDiplay('4')">4</button>
+        <button onclick="appendToDiplay('5')">5</button>
+        <button onclick="appendToDiplay('6')">6</button>
+        <button onclick="appendToDiplay('+')">+</button>
+        <button onclick="appendToDiplay('1')">1</button>
+        <button onclick="appendToDiplay('2')">2</button>
+        <button onclick="appendToDiplay('3')">3</button>
+        <button onclick="calculetResult()">=</button>
+        <button onclick="appendToDiplay('0')">0</button>
+        <button onclick="appendToDiplay('.')">.</button>
+        <button onclick="appendToDiplay('^')">^</button>
+        <button onclick="appendToDiplay('sqrt(')">√</button>
+        <button onclick="toggleScientificMode()">Sci</button>
+    </div>
+
+    <div id="scientific-buttons" class="buttons" style="display: none;">
+    <button onclick="appendToDiplay('log(')">log</button>
+    <button onclick="appendToDiplay('sin(')">sin</button>
+    <button onclick="appendToDiplay('cos(')">cos</button>
+    <button onclick="appendToDiplay('tan(')">tan</button>
+</div>
+<div class="history">
+    <h3>historico</h3>
+    <ul id="histotyList"></ul>
+</div>
+</div>
+
+<script src="./index.js"></script>
+
+</body>
+</html>
